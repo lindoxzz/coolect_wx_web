@@ -64,6 +64,7 @@ export default {
         }
     },
     methods: {
+        
         onPageChange (page) {
             this.$http.get('/wx_publics?page=' + page).then((res) => {
             this.thisTableData = res.data.wx_publics;
